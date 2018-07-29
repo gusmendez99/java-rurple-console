@@ -19,26 +19,26 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) {
-
-
         System.out.print("Ingrese la ruta del archivo del mapa: ");
         String mapPath = ReadUtil.readString();
         Map map = getMap(mapPath);
+        System.out.print(map);
 
         System.out.print("Ingrese la ruta del archivo de istrucciones: ");
         String instructionsPath = ReadUtil.readString();
         List<String> instructionsList = getInstructions(instructionsPath);
 
         int step = 0;
-        while (step < instructionsList.size() &&    //While because i don't know what happens with the first instruction
-                Map.isValidInstruction(instructionsList.get(step)) &&
-                !map.hasRobotPickAllCoins()
-                ){
-
-
+        System.out.println("Ejecutando...");
+        do {
+            boolean isValidMovement = map.placeInstruction(instructionsList.get(step));
             System.out.println(map);   //Overriding toString in Map class
             step++;
-        }
+            System.out.print("-> Presiona enter: ");
+            ReadUtil.readString();
+
+        } while (step < instructionsList.size() && Map.isValidInstruction(instructionsList.get(step))
+                && !map.hasRobotPickAllCoins());
 
         if(map.hasRobotPickAllCoins()){
             System.out.println("Felicidades, el robot recogio todas las monedas del mapa ingresado");
@@ -83,8 +83,8 @@ public class Main {
                     StandardCharsets.UTF_8
             );
 
-            map.setHeight(8);
-            map.setWidth(8);
+            map.setHeight(65);
+            map.setWidth(65);
             AtomicInteger atomicInteger = new AtomicInteger();
 
             lines.forEach(line -> {

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebf09903-eba9-4ba5-bfb9-907472d2f906" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rurple.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/model/PileCoin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Wall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/gusmendez/util/ReadUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,35 +17,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+            <state relative-caret-position="89">
+              <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#671#672#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#807#808#0" expanded="true" />
-                <element signature="e#838#839#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1015#1016#0" expanded="true" />
-                <element signature="e#1053#1054#0" expanded="true" />
-                <element signature="e#1089#1090#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1170#1171#0" expanded="true" />
-                <element signature="e#1221#1222#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1168#1169#0" expanded="true" />
+                <element signature="e#1982#1983#0" expanded="true" />
+                <element signature="e#2009#2010#0" expanded="true" />
+                <element signature="method#toString#0;class#Map#0" />
               </folding>
             </state>
           </provider>
@@ -62,8 +35,8 @@
       <file leaf-file-name="Robot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+            <state relative-caret-position="219">
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="e#461#462#0" expanded="true" />
                 <element signature="e#497#498#0" expanded="true" />
@@ -75,18 +48,21 @@
                 <element signature="e#630#631#0" expanded="true" />
                 <element signature="e#685#686#0" expanded="true" />
                 <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#553#554#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-706">
-              <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#getMap#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -124,6 +100,7 @@
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/PileCoin.java" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/util/ReadUtil.java" />
         <option value="$PROJECT_DIR$/src/steps.txt" />
+        <option value="$PROJECT_DIR$/map.txt" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/Main.java" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" />
@@ -147,32 +124,6 @@
             <path>
               <item name="Rurple" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rurple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rurple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rurple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rurple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rurple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rurple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rurple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gusmendez" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rurple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rurple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="gusmendez" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -274,7 +225,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -285,17 +235,17 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18124007" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.47853735" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.17326732" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4768977" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20717423" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4950495" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -309,7 +259,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -319,28 +277,9 @@
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -361,6 +300,7 @@
           <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -371,28 +311,9 @@
           <caret line="9" column="28" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -410,6 +331,7 @@
           <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -481,13 +403,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/map.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/util/ReadUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
@@ -519,20 +434,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
+    <entry file="file://$PROJECT_DIR$/map.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-706">
-          <caret line="79" column="13" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="87" column="20" selection-start-line="87" selection-start-column="20" selection-end-line="87" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1982#1983#0" expanded="true" />
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="65" column="22" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+        <state relative-caret-position="219">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
           <folding>
             <element signature="e#461#462#0" expanded="true" />
             <element signature="e#497#498#0" expanded="true" />
@@ -544,38 +469,19 @@
             <element signature="e#630#631#0" expanded="true" />
             <element signature="e#685#686#0" expanded="true" />
             <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="74" column="16" selection-start-line="74" selection-start-column="16" selection-end-line="74" selection-end-column="16" />
+        <state relative-caret-position="204">
+          <caret line="33" column="54" lean-forward="true" selection-start-line="33" selection-start-column="54" selection-end-line="33" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#598#599#0" expanded="true" />
-            <element signature="e#637#638#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#807#808#0" expanded="true" />
-            <element signature="e#838#839#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1053#1054#0" expanded="true" />
-            <element signature="e#1089#1090#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1170#1171#0" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>

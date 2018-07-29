@@ -37,8 +37,8 @@ public class Robot {
         return carryCoins;
     }
 
-    public void incrementCarryCoins() {
-        this.carryCoins++;
+    public void incrementCarryCoins(int coins) {
+        this.carryCoins += coins;
     }
 
     public int getDirection() {
@@ -71,6 +71,16 @@ public class Robot {
 
     @Override
     public String toString() {
-        return "Robot: row: " + getRow() + ", column: " + getColumn() + ", direction: " + getDirection();
+        switch (this.direction){
+            case 0: // ^
+                return "^";
+            case 1: // >
+                return ">";
+            case 2: // v
+                return "v";
+            case 3:// <
+                return "<";
+        }
+        return "";
     }
 }
