@@ -29,16 +29,19 @@ public class Main {
         List<String> instructionsList = getInstructions(instructionsPath);
 
         int step = 0;
+        boolean hasErrorInstructions = false;
         System.out.println("Ejecutando...");
         do {
-            boolean isValidMovement = map.placeInstruction(instructionsList.get(step));
-            System.out.println(map);   //Overriding toString in Map class
-            step++;
-            System.out.print("-> Presiona enter: ");
-            ReadUtil.readString();
-
-        } while (step < instructionsList.size() && Map.isValidInstruction(instructionsList.get(step))
-                && !map.hasRobotPickAllCoins());
+            hasErrorInstructions = map.placeInstruction(instructionsList.get(step));
+            if(!hasErrorInstructions){
+                System.out.println(map);   //Overriding toString in Map class
+                step++;
+                System.out.print("-> Presiona enter: ");
+                ReadUtil.readString();
+            } else {
+                System.out.println("ERROR AL EJECUTAR COMANDO, REVISE SUS INSTRUCCIONES...");
+            }
+        } while (step < instructionsList.size() && !hasErrorInstructions && !map.hasRobotPickAllCoins());
 
         if(map.hasRobotPickAllCoins()){
             System.out.println("Felicidades, el robot recogio todas las monedas del mapa ingresado");
@@ -74,7 +77,7 @@ public class Main {
 
     }
 
-    public static Map getMap(String mapPath){
+    private static Map getMap(String mapPath){
         final Map map = new Map();
 
         try {

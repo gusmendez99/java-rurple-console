@@ -68,8 +68,8 @@ public class Map {
             case MOVE:
                 if(canRobotMove()){
                     this.robot.move();
+                    return true;
                 }
-                return true;
             case ROTATE:
                 this.robot.rotate();
                 return true;
@@ -85,6 +85,30 @@ public class Map {
     }
 
     private boolean canRobotMove() {
+        //Set the possibilities to move for the robot
+        int desiredRow = this.robot.getRow();
+        int desiredColumn = this.robot.getColumn();
+        switch(this.robot.getDirection()){
+            case Robot.LOOKING_UP:
+                desiredColumn = this.robot.getColumn() - 1;
+            case Robot.LOOKING_RIGHT:
+                desiredRow = this.robot.getRow() + 1;
+            case Robot.LOOKING_DOWN:
+                desiredColumn = this.robot.getColumn() + 1;
+            case Robot.LOOKING_LEFT:
+                desiredRow = this.robot.getRow() - 1;
+        }
+
+        //Iterate all walls for check if the robot position is valid in the desired row/column
+
+        if(desiredRow == height || desiredRow == -1 || desiredColumn == width || desiredColumn == -1) return false;
+
+        for(Wall wall: walls){
+            if(wall.getRow() == desiredRow && wall.getColumn() == desiredColumn){
+                return false;
+            }
+        }
+
         return true;
     }
 

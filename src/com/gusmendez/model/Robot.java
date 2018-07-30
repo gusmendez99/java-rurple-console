@@ -1,6 +1,10 @@
 package com.gusmendez.model;
 
 public class Robot {
+    public static final int LOOKING_UP = 0;
+    public static final int LOOKING_RIGHT = 1;
+    public static final int LOOKING_DOWN = 2;
+    public static final int LOOKING_LEFT = 3;
     private int [] position;
     private int carryCoins;
     private int direction;
@@ -54,16 +58,16 @@ public class Robot {
 
     public void move(){
         switch (this.direction){
-            case 0: // ^
+            case LOOKING_UP: // ^
                 setRow(getRow() - 1);
                 break;
-            case 1: // >
+            case LOOKING_RIGHT: // >
                 setColumn(getColumn() + 1);
                 break;
-            case 2: // v
+            case LOOKING_DOWN: // v
                 setRow(getRow() + 1);
                 break;
-            case 3:// <
+            case LOOKING_LEFT:// <
                 setColumn(getColumn() - 1);
                 break;
         }
@@ -72,13 +76,13 @@ public class Robot {
     @Override
     public String toString() {
         switch (this.direction){
-            case 0: // ^
+            case LOOKING_UP: // ^
                 return "^";
-            case 1: // >
+            case LOOKING_RIGHT: // >
                 return ">";
-            case 2: // v
+            case LOOKING_DOWN: // v
                 return "v";
-            case 3:// <
+            case LOOKING_LEFT:// <
                 return "<";
         }
         return "";
