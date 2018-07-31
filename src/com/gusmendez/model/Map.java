@@ -68,20 +68,20 @@ public class Map {
             case MOVE:
                 if(canRobotMove()){
                     this.robot.move();
-                    return true;
+                    return false;
                 }
             case ROTATE:
                 this.robot.rotate();
-                return true;
+                return false;
             case PICK:
                 if(canRobotPickCoins()){
                     robot.incrementCarryCoins(1);
                 } else {
                     System.out.println("No hay monedas por recoger en esta posicion...");
                 }
-                return true;
+                return false;
         }
-        return false;
+        return true;
     }
 
     private boolean canRobotMove() {

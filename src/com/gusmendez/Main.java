@@ -85,11 +85,7 @@ public class Main {
                     Paths.get(mapPath),
                     StandardCharsets.UTF_8
             );
-
-            map.setHeight(65);
-            map.setWidth(65);
             AtomicInteger atomicInteger = new AtomicInteger();
-
             lines.forEach(line -> {
                 int row = atomicInteger.getAndIncrement(); //Index of the line that its
 
@@ -133,11 +129,26 @@ public class Main {
                 }
             });
 
+
+            Stream<String> linesMap = Files.lines(
+                    Paths.get(mapPath),
+                    StandardCharsets.UTF_8
+            );
+
+            //Set Dimensions
+            map.setWidth(linesMap.findFirst().get().length());
+            map.setHeight(atomicInteger.get());
+
+            System.out.println("Ancho: " + map.getWidth() + ", Alto: " + map.getHeight());
+
+
         } catch (IOException exception) {
             System.out.println("Error al generar mapa!");
         } finally {
             System.out.println("Mapa cargado exitosamente");
         }
+
+
 
         return map;
     }
