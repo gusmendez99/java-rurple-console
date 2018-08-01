@@ -129,7 +129,7 @@ public class Main {
                 }
             });
 
-
+            //Get width because the previous stream has been closed
             Stream<String> linesMap = Files.lines(
                     Paths.get(mapPath),
                     StandardCharsets.UTF_8

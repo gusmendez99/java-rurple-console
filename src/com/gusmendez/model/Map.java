@@ -68,8 +68,10 @@ public class Map {
             case MOVE:
                 if(canRobotMove()){
                     this.robot.move();
-                    return false;
+                } else {
+                    System.out.println("No se puede mover, estas en el limite de la fila/columna");
                 }
+                return false;
             case ROTATE:
                 this.robot.rotate();
                 return false;
@@ -90,17 +92,16 @@ public class Map {
         int desiredColumn = this.robot.getColumn();
         switch(this.robot.getDirection()){
             case Robot.LOOKING_UP:
-                desiredColumn = this.robot.getColumn() - 1;
-            case Robot.LOOKING_RIGHT:
-                desiredRow = this.robot.getRow() + 1;
-            case Robot.LOOKING_DOWN:
-                desiredColumn = this.robot.getColumn() + 1;
-            case Robot.LOOKING_LEFT:
                 desiredRow = this.robot.getRow() - 1;
+            case Robot.LOOKING_RIGHT:
+                desiredColumn = this.robot.getColumn() + 1;
+            case Robot.LOOKING_DOWN:
+                desiredRow = this.robot.getRow() + 1;
+            case Robot.LOOKING_LEFT:
+                desiredColumn = this.robot.getColumn() - 1;
         }
 
         //Iterate all walls for check if the robot position is valid in the desired row/column
-
         if(desiredRow == height || desiredRow == -1 || desiredColumn == width || desiredColumn == -1) return false;
 
         for(Wall wall: walls){
@@ -108,7 +109,6 @@ public class Map {
                 return false;
             }
         }
-
         return true;
     }
 
