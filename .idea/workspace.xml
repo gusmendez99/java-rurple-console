@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ebf09903-eba9-4ba5-bfb9-907472d2f906" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/steps.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,34 +12,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CodeIris Favorites" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="61" column="101" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="101" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getInstructions#0;class#Main#0" />
-                <element signature="method#getMap#0;class#Main#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+            <state relative-caret-position="-2">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1171#1172#0" expanded="true" />
                 <element signature="e#1215#1216#0" expanded="true" />
                 <element signature="e#1260#1261#0" expanded="true" />
                 <element signature="e#1307#1308#0" expanded="true" />
+                <element signature="method#placeInstruction#0;class#Map#0" />
+                <element signature="method#canRobotMove#0;class#Map#0" />
+                <element signature="method#canRobotPickCoins#0;class#Map#0" />
+                <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+                <element signature="method#toString#0;class#Map#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -68,8 +69,8 @@
         <option value="$PROJECT_DIR$/src/steps.txt" />
         <option value="$PROJECT_DIR$/map.txt" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" />
-        <option value="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" />
         <option value="$PROJECT_DIR$/steps.txt" />
+        <option value="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/Main.java" />
       </list>
     </option>
@@ -86,8 +87,8 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +135,10 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ToolWindowCode Iris.ShowToolbar" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -239,26 +244,28 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info active="true" id="simpleUML" order="2" visible="true" weight="0.28290468" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.66831684" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17326732" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.66831684" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.054455444" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2065053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933994" />
+      <window_info anchor="right" auto_hide="true" id="Code Iris" type="SLIDING" weight="0.3214826" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -286,11 +293,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="140" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -298,10 +300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -309,10 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -326,6 +320,11 @@
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -334,11 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="140" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -346,10 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -357,10 +347,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -374,6 +360,11 @@
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -382,11 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2380">
           <caret line="140" lean-forward="true" selection-start-line="140" selection-end-line="140" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -394,10 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -405,10 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -422,6 +400,11 @@
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -430,11 +413,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="731">
           <caret line="43" column="103" lean-forward="true" selection-start-line="43" selection-start-column="103" selection-end-line="43" selection-end-column="103" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -442,11 +420,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="34" column="73" lean-forward="true" selection-start-line="34" selection-start-column="73" selection-end-line="34" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -460,6 +433,11 @@
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -475,11 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -493,6 +466,11 @@
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
@@ -508,11 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,10 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="634" column="29" lean-forward="true" selection-start-line="634" selection-start-column="29" selection-end-line="634" selection-end-column="29" />
-          <folding>
-            <element signature="e#23072#23073#0" expanded="true" />
-            <element signature="e#23112#23113#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -587,10 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#1018#1019#0" expanded="true" />
-            <element signature="e#1058#1059#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,10 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,36 +577,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
           <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
-          <folding>
-            <element signature="e#13540#13541#0" expanded="true" />
-            <element signature="e#13567#13568#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="-2">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1171#1172#0" expanded="true" />
             <element signature="e#1215#1216#0" expanded="true" />
             <element signature="e#1260#1261#0" expanded="true" />
             <element signature="e#1307#1308#0" expanded="true" />
+            <element signature="method#placeInstruction#0;class#Map#0" />
+            <element signature="method#canRobotMove#0;class#Map#0" />
+            <element signature="method#canRobotPickCoins#0;class#Map#0" />
+            <element signature="method#getPileCoinsInPosition#0;class#Map#0" />
+            <element signature="method#toString#0;class#Map#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="61" column="101" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-            <element signature="method#getMap#0;class#Main#0" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="149" column="38" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="38" />
         </state>
       </provider>
     </entry>
