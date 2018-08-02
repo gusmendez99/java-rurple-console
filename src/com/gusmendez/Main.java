@@ -5,6 +5,7 @@ import com.gusmendez.model.Robot;
 import com.gusmendez.model.Wall;
 import com.gusmendez.util.ReadUtil;
 
+import java.awt.*;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -13,41 +14,69 @@ import com.gusmendez.model.Map;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Stream;
+
+//For File Choose in console
+import javax.swing.JFileChooser;
+import java.io.File;
 
 public class Main {
 
     public static void main(String[] args) {
         System.out.print("Ingrese la ruta del archivo del mapa: ");
-        String mapPath = ReadUtil.readString();
-        Map map = getMap(mapPath);
-        System.out.print(map);
+        String mapPath = chooseAndGetFilePath("mapa");
+        if(mapPath != null){
+            Map map = getMap(mapPath);
+            System.out.print(map);
 
-        System.out.print("Ingrese la ruta del archivo de istrucciones: ");
-        String instructionsPath = ReadUtil.readString();
-        List<String> instructionsList = getInstructions(instructionsPath);
+            System.out.print("Ingrese la ruta del archivo de istrucciones: ");
+            String instructionsPath = chooseAndGetFilePath("instrucciones");
 
-        int step = 0;
-        boolean hasErrorInstructions = false;
-        System.out.println("Ejecutando...");
-        do {
-            hasErrorInstructions = map.placeInstruction(instructionsList.get(step));
-            if(!hasErrorInstructions){
-                System.out.println(map);   //Overriding toString in Map class
-                step++;
-                System.out.print("-> Presiona enter: ");
-                ReadUtil.readString();
+            if(instructionsPath != null){
+                List<String> instructionsList = getInstructions(instructionsPath);
+                int step = 0;
+                boolean hasErrorInstructions = false;
+                System.out.println("Ejecutando...");
+                do {
+                    hasErrorInstructions = map.placeInstruction(instructionsList.get(step));
+                    if(!hasErrorInstructions){
+                        System.out.println(map);   //Overriding toString in Map class
+                        step++;
+                        try {
+                            TimeUnit.SECONDS.sleep((long) 1);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    } else {
+                        System.out.println("ERROR AL EJECUTAR COMANDO, REVISE SUS INSTRUCCIONES...");
+                    }
+                } while (step < instructionsList.size() && !hasErrorInstructions && !map.hasRobotPickAllCoins());
+
+                if(map.hasRobotPickAllCoins()){
+                    System.out.println("Felicidades, el robot recogio todas las monedas del mapa ingresado");
+                } else {
+                    System.out.println("Wow! el robot no recogio todas las monedas del mapa ingresado");
+                }
+                System.exit(0); //Doesnt finish after use a FileChooser, its necessary a exit method
             } else {
-                System.out.println("ERROR AL EJECUTAR COMANDO, REVISE SUS INSTRUCCIONES...");
+                System.out.println("Ocurrio un error al cargar la ruta de instrucciones, intente de nuevo...");
             }
-        } while (step < instructionsList.size() && !hasErrorInstructions && !map.hasRobotPickAllCoins());
-
-        if(map.hasRobotPickAllCoins()){
-            System.out.println("Felicidades, el robot recogio todas las monedas del mapa ingresado");
         } else {
-            System.out.println("Wow! el robot no recogio todas las monedas del mapa ingresado");
+            System.out.println("Ocurrio un error al cargar la ruta del mapa, intente de nuevo...");
         }
+    }
+
+    private static String chooseAndGetFilePath(String fileName){
+        FileDialog dialog = new FileDialog((Frame)null, "Seleccione " + fileName + " a abrir");
+        dialog.setMode(FileDialog.LOAD);
+        dialog.setVisible(true);
+        String file = dialog.getFile();
+        System.out.println(file + " elegido.");
+
+        return file;
+
     }
 
     private static List<String> getInstructions(String instructionsPath) {
@@ -100,19 +129,15 @@ public class Main {
                                         break;
                                     case "^":
                                         map.setRobot(new Robot(row, column, 0));
-                                        System.out.println("Robot Added");
                                         break;
                                     case ">":
                                         map.setRobot(new Robot(row, column, 1));
-                                        System.out.println("Robot Added");
                                         break;
                                     case "v":
                                         map.setRobot(new Robot(row, column, 2));
-                                        System.out.println("Robot Added");
                                         break;
                                     case "<":
                                         map.setRobot(new Robot(row, column, 3));
-                                        System.out.println("Robot Added");
                                         break;
                                     default:
                                         throw new Exception("Hay un error en el mapa, intente de nuevo...");
@@ -123,12 +148,10 @@ public class Main {
                         } else {
                             int coins = Integer.parseInt(charToEvaluate);
                             map.addPileCoins(new PileCoin(row, column, coins));
-                            System.out.println("Pile of Coins Added");
                         }
                     }
                 }
             });
-
             //Get width because the previous stream has been closed
             Stream<String> linesMap = Files.lines(
                     Paths.get(mapPath),
@@ -138,18 +161,11 @@ public class Main {
             //Set Dimensions
             map.setWidth(linesMap.findFirst().get().length());
             map.setHeight(atomicInteger.get());
-
-            System.out.println("Ancho: " + map.getWidth() + ", Alto: " + map.getHeight());
-
-
         } catch (IOException exception) {
             System.out.println("Error al generar mapa!");
         } finally {
             System.out.println("Mapa cargado exitosamente");
         }
-
-
-
         return map;
     }
 

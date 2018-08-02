@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebf09903-eba9-4ba5-bfb9-907472d2f906" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.txt" beforeDir="false" afterPath="$PROJECT_DIR$/map.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/gusmendez/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/gusmendez/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/steps.txt" beforeDir="false" afterPath="$PROJECT_DIR$/steps.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -17,14 +16,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="68">
+              <caret line="61" column="101" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getInstructions#0;class#Main#0" />
+                <element signature="method#getMap#0;class#Main#0" />
               </folding>
             </state>
           </provider>
@@ -34,48 +34,13 @@
         <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="37">
-              <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1171#1172#0" expanded="true" />
                 <element signature="e#1215#1216#0" expanded="true" />
                 <element signature="e#1260#1261#0" expanded="true" />
                 <element signature="e#1307#1308#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="steps.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/steps.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PileCoin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/PileCoin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Robot.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-              <folding>
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1058#1059#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,9 +68,9 @@
         <option value="$PROJECT_DIR$/src/steps.txt" />
         <option value="$PROJECT_DIR$/map.txt" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/Robot.java" />
-        <option value="$PROJECT_DIR$/src/com/gusmendez/Main.java" />
         <option value="$PROJECT_DIR$/src/com/gusmendez/model/Map.java" />
         <option value="$PROJECT_DIR$/steps.txt" />
+        <option value="$PROJECT_DIR$/src/com/gusmendez/Main.java" />
       </list>
     </option>
   </component>
@@ -281,11 +246,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29042906" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.6320132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.66831684" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.17326732" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20347957" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -307,18 +272,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/gusmendez/Main.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/gusmendez/Main.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java</url>
           <line>112</line>
           <properties />
@@ -336,6 +289,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -383,6 +337,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -430,6 +385,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -477,6 +433,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -488,6 +445,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -520,6 +478,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -552,6 +511,7 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
           </folding>
         </state>
       </provider>
@@ -623,28 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/PileCoin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getInstructions#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
@@ -656,10 +594,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/PileCoin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#556#557#0" expanded="true" />
+            <element signature="e#590#591#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/steps.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/awt/FileDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="95" column="11" selection-start-line="95" selection-start-column="11" selection-end-line="95" selection-end-column="11" />
+          <folding>
+            <element signature="e#13540#13541#0" expanded="true" />
+            <element signature="e#13567#13568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gusmendez/model/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="37">
-          <caret line="104" column="22" selection-start-line="104" selection-start-column="22" selection-end-line="104" selection-end-column="22" />
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1171#1172#0" expanded="true" />
@@ -670,10 +637,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/steps.txt">
+    <entry file="file://$PROJECT_DIR$/src/com/gusmendez/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+        <state relative-caret-position="68">
+          <caret line="61" column="101" lean-forward="true" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getInstructions#0;class#Main#0" />
+            <element signature="method#getMap#0;class#Main#0" />
+          </folding>
         </state>
       </provider>
     </entry>
