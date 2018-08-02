@@ -93,12 +93,16 @@ public class Map {
         switch(this.robot.getDirection()){
             case Robot.LOOKING_UP:
                 desiredRow = this.robot.getRow() - 1;
+                break;
             case Robot.LOOKING_RIGHT:
                 desiredColumn = this.robot.getColumn() + 1;
+                break;
             case Robot.LOOKING_DOWN:
                 desiredRow = this.robot.getRow() + 1;
+                break;
             case Robot.LOOKING_LEFT:
                 desiredColumn = this.robot.getColumn() - 1;
+                break;
         }
 
         //Iterate all walls for check if the robot position is valid in the desired row/column
@@ -118,6 +122,7 @@ public class Map {
             for(int x = 0; x < pileCoins.size(); x++){
                 if(pileCoins.get(x).getPosition() == pileCoin.getPosition()){
                     pileCoins.get(x).decrementCoins(1);
+                    System.out.println("Moneda recogida! Quedan " + pileCoins.get(x).getCoinsCount());
                     if(pileCoins.get(x).getCoinsCount() == 0){
                         pileCoins.remove(x);
                     }
@@ -151,8 +156,10 @@ public class Map {
 
     @Override
     public String toString() {
-        String currentMap = "";
+        String infoRobot = "ROBOT(F:" + this.robot.getRow() + ", C:" + this.robot.getColumn() + "): Monedas: " +
+            this.robot.getCarryCoins();
 
+        String currentMap = infoRobot + "\n";
         for(int row = 0; row < height; row++){
             for(int column = 0; column < width; column++){
                 boolean isWallInPosition = isWallInPosition(row, column);
