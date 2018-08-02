@@ -72,9 +72,8 @@ public class Main {
         FileDialog dialog = new FileDialog((Frame)null, "Seleccione " + fileName + " a abrir");
         dialog.setMode(FileDialog.LOAD);
         dialog.setVisible(true);
-        String file = dialog.getFile();
-        System.out.println(file + " elegido.");
-
+        String file = new File(dialog.getFile()).getAbsolutePath().replace("\\", "/");
+        System.out.println(file + " seleccionado.");
         return file;
 
     }
